@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(enum_stringifyer)
+
+add_executable(enum_stringifyer example.cpp enum_stringifyer/enum_stringifyer.hpp)
+set_target_properties(enum_stringifyer PROPERTIES CXX_STANDARD 17)
+target_include_directories(enum_stringifyer PUBLIC enum_stringifyer)
