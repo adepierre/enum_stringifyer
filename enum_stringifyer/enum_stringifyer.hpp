@@ -67,7 +67,7 @@ namespace enum_stringifyer
     }
 }
 
-#define DECLARE_ENUM_STRINGIFYER(Enum) std::ostream& operator <<(std::ostream& os, const Enum v)
+#define DECLARE_ENUM_STRINGIFYER(Enum) ::std::ostream& operator <<(::std::ostream& os, const Enum v)
 
 #if defined(__clang__) || defined(__GNUC__) || defined(_MSC_VER)
 #define DEFINE_ENUM_STRINGIFYER_RANGE(Enum, min_value, max_value)                          \
