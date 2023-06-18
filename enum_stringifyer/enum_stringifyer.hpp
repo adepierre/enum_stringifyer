@@ -24,7 +24,7 @@ namespace enum_stringifyer
         constexpr std::string_view header = "constexpr auto enum_stringifyer::enum_value_name() [with auto V = ";
         constexpr std::string_view footer = "]";
         constexpr std::string_view name = __PRETTY_FUNCTION__;
-#elif !defined(_MSC_VER)
+#elif defined(_MSC_VER)
         constexpr std::string_view header = "auto __cdecl enum_stringifyer::enum_value_name<";
         constexpr std::string_view footer = ">(void) noexcept";
         constexpr std::string_view name = __FUNCSIG__;
