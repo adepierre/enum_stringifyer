@@ -40,7 +40,7 @@ DEFINE_ENUM_STRINGIFYER_LIST(Test2,
 
 int main()
 {
-    std::cout 
+    std::cout
         << Test::neg << '\n'    // Test::neg
         << Test::a << '\n'      // Test::a
         << Test::more_a << '\n' // Test::a
